@@ -2,5 +2,42 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-decoration: none;
+    font-family: sans-serif;
 }
+
+:root {
+    --body-bg: #121214;
+    --color-title: #ffffff;
+    --color-desc: #cccccc;
+
+}
+
+body {
+    background-color: var(--body-bg);
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+}
+
+.section-title {
+    color: var(--color-title);
+
+}
+
+.section-desc {
+    color: var(--color-desc);
+    line-height: 1.5rem;
+}
+
+.section-question--area {
+    width: 300px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
