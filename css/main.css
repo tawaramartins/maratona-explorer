@@ -1,3 +1,5 @@
+/***========CSS RESET===================***/
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,10 +7,14 @@
     font-family: sans-serif;
 }
 
+/***=========COLORS==================***/
+
+
 :root {
     --body-bg: #121214;
     --color-title: #ffffff;
     --color-desc: #cccccc;
+    --bg-btn: #8a2be2;
 
 }
 
@@ -16,13 +22,19 @@ body {
     background-color: var(--body-bg);
 }
 
+/***=========MAIN CONTAINER==================***/
+
 .main-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 5rem;
+}
+
+/***=========SECTION PHOTO, TITLE AND DESCRIPTON==================***/
+
+.section-photo {
+    margin: 3rem;
 }
 
 .section-title {
@@ -32,12 +44,38 @@ body {
 
 .section-desc {
     color: var(--color-desc);
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
+
+/***==========SECTION BUTTON=================***/
+
 
 .section-question--area {
     width: 300px;
     margin: 1rem;
     padding: 1rem;
+    border-radius: 4px;
+    font-size: 15px;
 }
 
+/***==========TYPE QUESTION=================***/
+
+
+.input-question:hover {
+    outline: none;
+    border: 3px solid var(--bg-btn);
+    transition: 0.5s;
+}
+
+/***===========MAKE QUESTION================***/
+.btn-question {
+    cursor: pointer;
+    border: 0;
+    background-color: var(--bg-btn);
+    color: var(--color-title);
+    transition: 0.2s;
+}
+
+.btn-question:hover {
+    filter: brightness(1.1);
+}
